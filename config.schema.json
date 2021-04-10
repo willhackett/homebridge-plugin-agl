@@ -1,14 +1,27 @@
 {
-  "pluginAlias": "ExampleDynamicPlatform",
+  "pluginAlias": "ExampleHomebridgePlugin",
   "pluginType": "platform",
+  "singular": true,
   "schema": {
     "type": "object",
     "properties": {
-      "name": {
-        "title": "Name",
+      "initialCallbackCode": {
+        "title": "Initial Callback Code",
         "type": "string",
+        "required": false,
+        "default": ""
+      },
+      "refreshToken": {
+        "title": "Refresh Token",
+        "type": "string",
+        "required": false,
+        "default": ""
+      },
+      "aglAccountNumber": {
+        "title": "AGL Account Number",
+        "type": "number",
         "required": true,
-        "default": "Example Dynamic Platform"
+        "default": ""
       }
     }
   }
